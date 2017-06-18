@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/mehedi/StudioProjects/Co-op360/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="01e390ea7bf18dd03e88b65a15c55d32c7a3fd62">
+        <dex dex="/home/mehedi/StudioProjects/Co-op360/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_aec32db3d0eb62c0a3e81e1f30a775419f3235c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mehedi/StudioProjects/Co-op360/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/mehedi/StudioProjects/Co-op360/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2c58f3addf197b9551cea3e7c69126a8a6d13285/classes.dex" />
+    </item>
+
+</items>

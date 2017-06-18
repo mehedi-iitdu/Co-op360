@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.datasoft.co_op360">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.datasoft.co_op360.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.branchmanager.BmMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.managementpanel.MpMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.AutoProcessGroupList"
+            android:label="@string/title_activity_fo_auto_process"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.AutoProcessMemberList"
+            android:label="@string/title_activity_fo_auto_process"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.AutoProcessEntryActivity"
+            android:label="@string/title_activity_fo_auto_process"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoGroupActivity"
+            android:label="@string/title_activity_fo_group"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoMemberAcivity"
+            android:label="Members"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoMemberAddActivity"
+            android:label="Savings Add"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".presentation.fieldofficer.ui.activities.FoMemberActivity" />
+        </activity>
+
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoShareActivity"
+            android:label="Share"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoShareListActivity"
+            android:label="Share List"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoDetailsShareActivity"
+            android:label="Share Details"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoSavingsActivity"
+            android:label="Savings"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoSavingsListActivity"
+            android:label="Savings List"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoSavingsAddActivity"
+            android:label="Savings Add"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoSavingsListActivity" />
+        </activity>
+
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoDetailsSavingsActivity"
+            android:label="Savings Details"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoLoanActivity"
+            android:label="Loan"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoLoanTabActivity"
+            android:label="Loan Tab"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoDetailsLoanTransactionAcivity"
+            android:label="Loan Transaction Details"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoDetailsShareActivity"
+            android:label="Share Details"
+            android:theme="@style/AppTheme"></activity>
+
+    </application>
+
+</manifest>
