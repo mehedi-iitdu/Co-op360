@@ -4,12 +4,14 @@
     card_view:cardCornerRadius="1dp"
     android:layout_margin="10dp"
     android:layout_height="160dp"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/custom_ripple">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/process_image"
