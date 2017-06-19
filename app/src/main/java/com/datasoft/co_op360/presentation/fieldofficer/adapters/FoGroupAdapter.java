@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.datasoft.co_op360.domain.model.GroupData;
+import com.datasoft.co_op360.domain.model.Samity;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoGroupPresenter;
 import com.datasoft.co_op360.R;
 
@@ -21,13 +21,13 @@ import java.util.List;
 public class FoGroupAdapter extends RecyclerView.Adapter<FoGroupAdapter.CardViewHolder> {
 
     Context context;
-    List<GroupData> groupDatas = new ArrayList<>();
+    List<Samity> samitys = new ArrayList<>();
     LayoutInflater inflater;
     FoGroupPresenter foGroupPresenter;
 
-    public FoGroupAdapter(Context context, List<GroupData> groupDatas, FoGroupPresenter foGroupPresenter) {
+    public FoGroupAdapter(Context context, List<Samity> samitys, FoGroupPresenter foGroupPresenter) {
         this.context = context;
-        this.groupDatas = groupDatas;
+        this.samitys = samitys;
         this.foGroupPresenter = foGroupPresenter;
         this.inflater = LayoutInflater.from(context);
     }
@@ -43,13 +43,13 @@ public class FoGroupAdapter extends RecyclerView.Adapter<FoGroupAdapter.CardView
     @Override
     public void onBindViewHolder(CardViewHolder holder, int position) {
 
-        holder.bind(groupDatas.get(position), position + 1, foGroupPresenter);
+        holder.bind(samitys.get(position), position + 1, foGroupPresenter);
     }
 
     @Override
     public int getItemCount() {
 
-        return groupDatas.size();
+        return samitys.size();
     }
 
     public class CardViewHolder extends RecyclerView.ViewHolder {
@@ -73,19 +73,15 @@ public class FoGroupAdapter extends RecyclerView.Adapter<FoGroupAdapter.CardView
             tv_loan = (TextView) itemView.findViewById(R.id.tv_loan);
         }
 
-        public void bind(final GroupData groupData, int number, final FoGroupPresenter foGroupPresenter) {
+        public void bind(final Samity samity, int number, final FoGroupPresenter foGroupPresenter) {
 
             tv_number.setText("" + number);
-            tv_group_pname.setText(groupData.getmGroupName());
-            tv_total_member.setText("Total RESTMember : " + groupData.getmTotalMember());
-            tv_savings.setText("Savings : " + groupData.getmSavingsAmount());
-            tv_share.setText("Share : " + groupData.getmShareAmount());
-            tv_loan.setText("Loan : " + groupData.getmLoanAmount());
+            tv_group_pname.setText(samity.getName());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    foGroupPresenter.itemClick(groupData);
+                    foGroupPresenter.itemClick(samity);
                 }
             });
 

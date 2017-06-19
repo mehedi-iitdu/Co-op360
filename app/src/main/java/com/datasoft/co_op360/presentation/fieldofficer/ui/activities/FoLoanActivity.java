@@ -8,12 +8,15 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.datasoft.co_op360.domain.executor.impl.ThreadExecutor;
 import com.datasoft.co_op360.domain.model.GroupData;
+import com.datasoft.co_op360.domain.model.Samity;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoGroupPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.impl.FoGroupPresenterImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoGroupView;
 import com.datasoft.co_op360.R;
 import com.datasoft.co_op360.presentation.fieldofficer.adapters.FoGroupAdapter;
+import com.datasoft.co_op360.threading.MainThreadImpl;
 
 import java.util.List;
 
@@ -38,7 +41,7 @@ public class FoLoanActivity extends AppCompatActivity implements FoGroupView {
         setSupportActionBar(toolbar);
         setTitle("Group List");
 
-        foGroupPresenter = new FoGroupPresenterImpl(this);
+        foGroupPresenter = new FoGroupPresenterImpl(ThreadExecutor.getInstance(), MainThreadImpl.getInstance(), this);
         progressDialog = new ProgressDialog(this);
         recyclerView = (RecyclerView) findViewById(R.id.rv_group_list);
         foGroupPresenter.getAutoProcessData();
@@ -54,7 +57,7 @@ public class FoLoanActivity extends AppCompatActivity implements FoGroupView {
     }
 
     @Override
-    public void setProcesses(List<GroupData> list) {
+    public void setProcesses(List<Samity> list) {
 
         adapter = new FoGroupAdapter(this, list, foGroupPresenter);
         recyclerView.setAdapter(adapter);
@@ -79,7 +82,7 @@ public class FoLoanActivity extends AppCompatActivity implements FoGroupView {
     }
 
     @Override
-    public void onItemclick(GroupData groupData) {
+    public void onItemclick(Samity samity) {
 
         startActivity(new Intent(this, FoLoanTabActivity.class));
 
