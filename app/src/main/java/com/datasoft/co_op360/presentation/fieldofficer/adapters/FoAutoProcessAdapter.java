@@ -2,6 +2,7 @@ package com.datasoft.co_op360.presentation.fieldofficer.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,6 +79,8 @@ public class FoAutoProcessAdapter extends RecyclerView.Adapter<FoAutoProcessAdap
 
             tv_number.setText("" + number);
             tv_group_pname.setText(samity.getName());
+
+            Log.e("SamityId", samity.getId());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

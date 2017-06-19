@@ -42,6 +42,7 @@ public class AutoProcessMemberList extends AppCompatActivity implements AutoProc
 
         mIntent = getIntent();
         mSamityId = mIntent.getIntExtra("SamityId", 0);
+
         foAutoProcessMemberListPresenter = new FoAutoProcessMemberListPresenterImpl(ThreadExecutor.getInstance(), MainThreadImpl.getInstance(), this);
         progressDialog = new ProgressDialog(this);
         recyclerView = (RecyclerView) findViewById(R.id.rv_member_list);

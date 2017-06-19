@@ -79,8 +79,10 @@ public class FoAutoProcessMemberListAdapter extends RecyclerView.Adapter<FoAutoP
 
             tv_number.setText("" + number);
             tv_member_name.setText(member.getName());
+/*
             tv_member_id.setText(member.getId());
             tv_member_spouse.setText("Spouse : " + member.getFathersSpouseName());
+*/
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
