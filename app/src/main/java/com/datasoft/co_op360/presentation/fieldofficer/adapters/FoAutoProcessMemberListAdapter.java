@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.datasoft.co_op360.domain.model.MemberListData;
+import com.datasoft.co_op360.domain.model.Member;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoAutoProcessMemberListPresenter;
 import com.datasoft.co_op360.R;
 
@@ -21,14 +21,14 @@ import java.util.List;
 public class FoAutoProcessMemberListAdapter extends RecyclerView.Adapter<FoAutoProcessMemberListAdapter.CardViewHolder> {
 
     Context context;
-    List<MemberListData> memberListDatas = new ArrayList<>();
+    List<Member> members = new ArrayList<>();
     LayoutInflater inflater;
 
     FoAutoProcessMemberListPresenter foAutoProcessMemberListPresenter;
 
-    public FoAutoProcessMemberListAdapter(Context context, List<MemberListData> memberListDatas, FoAutoProcessMemberListPresenter foAutoProcessMemberListPresenter) {
+    public FoAutoProcessMemberListAdapter(Context context, List<Member> members, FoAutoProcessMemberListPresenter foAutoProcessMemberListPresenter) {
         this.context = context;
-        this.memberListDatas = memberListDatas;
+        this.members = members;
         this.foAutoProcessMemberListPresenter = foAutoProcessMemberListPresenter;
         this.inflater = LayoutInflater.from(context);
     }
@@ -43,13 +43,13 @@ public class FoAutoProcessMemberListAdapter extends RecyclerView.Adapter<FoAutoP
 
     @Override
     public void onBindViewHolder(FoAutoProcessMemberListAdapter.CardViewHolder holder, int position) {
-        holder.bind(memberListDatas.get(position), position + 1, foAutoProcessMemberListPresenter);
+        holder.bind(members.get(position), position + 1, foAutoProcessMemberListPresenter);
     }
 
     @Override
     public int getItemCount() {
 
-        return memberListDatas.size();
+        return members.size();
     }
 
     public class CardViewHolder extends RecyclerView.ViewHolder {
@@ -75,20 +75,17 @@ public class FoAutoProcessMemberListAdapter extends RecyclerView.Adapter<FoAutoP
             tv_loan = (TextView) itemView.findViewById(R.id.tv_loan);
         }
 
-        public void bind(final MemberListData memberListData, int number, final FoAutoProcessMemberListPresenter foAutoProcessMemberListPresenter) {
+        public void bind(final Member member, int number, final FoAutoProcessMemberListPresenter foAutoProcessMemberListPresenter) {
 
             tv_number.setText("" + number);
-            tv_member_name.setText(memberListData.getmMemberName());
-            tv_member_id.setText(memberListData.getmMemberID());
-            tv_member_spouse.setText("Spouse : " + memberListData.getGetmMemberSpouse());
-            tv_savings.setText("Savings : " + memberListData.getmSavingsAmount());
-            tv_share.setText("Share : " + memberListData.getmShareAmount());
-            tv_loan.setText("Loan : " + memberListData.getmLoanAmount());
+            tv_member_name.setText(member.getName());
+            tv_member_id.setText(member.getId());
+            tv_member_spouse.setText("Spouse : " + member.getFathersSpouseName());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    foAutoProcessMemberListPresenter.itemClick(memberListData);
+                    foAutoProcessMemberListPresenter.itemClick(member);
                 }
             });
 

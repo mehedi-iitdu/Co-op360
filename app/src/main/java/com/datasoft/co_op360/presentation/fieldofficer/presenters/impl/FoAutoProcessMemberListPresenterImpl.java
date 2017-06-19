@@ -1,43 +1,44 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
-import com.datasoft.co_op360.domain.model.MemberListData;
-import com.datasoft.co_op360.domain.interactors.FoAutoProcessMemberListInteractor;
+import com.datasoft.co_op360.domain.executor.Executor;
+import com.datasoft.co_op360.domain.executor.MainThread;
+import com.datasoft.co_op360.domain.interactors.GetMemberBySamityIdInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.GetMemberBySamityIdInteractorImpl;
+import com.datasoft.co_op360.domain.model.Member;
+import com.datasoft.co_op360.presentation.fieldofficer.presenters.AbstractPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoAutoProcessMemberListPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.AutoProcessMemberListView;
-import com.datasoft.co_op360.domain.interactors.impl.FoAutoProcessMemberListInteractorImpl;
-
+import com.datasoft.co_op360.storage.MemberRepositoryImpl;
 import java.util.List;
 
 /**
  * Created by mehedi on 4/3/17.
  */
 
-public class FoAutoProcessMemberListPresenterImpl implements FoAutoProcessMemberListPresenter, FoAutoProcessMemberListInteractor.MemberListFinishedListener {
+public class FoAutoProcessMemberListPresenterImpl extends AbstractPresenter implements FoAutoProcessMemberListPresenter, GetMemberBySamityIdInteractor.Callback {
 
     private AutoProcessMemberListView memberListView;
-    private FoAutoProcessMemberListInteractor foAutoProcessMemberListInteractor;
+    private GetMemberBySamityIdInteractor getMemberBySamityIdInteractor;
 
-    public FoAutoProcessMemberListPresenterImpl(AutoProcessMemberListView memberListView) {
-
+    public FoAutoProcessMemberListPresenterImpl(Executor executor, MainThread mainThread, AutoProcessMemberListView memberListView) {
+        super(executor, mainThread);
         this.memberListView = memberListView;
-        foAutoProcessMemberListInteractor = new FoAutoProcessMemberListInteractorImpl();
     }
 
     @Override
-    public void getMemberList() {
+    public void getMemberList(int id) {
 
         if (memberListView != null) {
 
             memberListView.showProgress();
         }
-
-        foAutoProcessMemberListInteractor.loadMemberList(this);
+        new GetMemberBySamityIdInteractorImpl(mExecutor, mMainThread, new MemberRepositoryImpl(), this, id).execute();
     }
 
     @Override
-    public void itemClick(MemberListData memberListData) {
+    public void itemClick(Member member) {
 
-        memberListView.onItemclick(memberListData);
+        memberListView.onItemclick(member);
     }
 
     @Override
@@ -47,12 +48,16 @@ public class FoAutoProcessMemberListPresenterImpl implements FoAutoProcessMember
     }
 
     @Override
-    public void onMembersListLoad(List<MemberListData> list) {
+    public void onMemberRetrieved(List<Member> memberList) {
 
         if (memberListView != null) {
-
-            memberListView.setProcesses(list);
+            memberListView.setProcesses(memberList);
             memberListView.hideProgress();
         }
+    }
+
+    @Override
+    public void noMemberFound() {
+
     }
 }

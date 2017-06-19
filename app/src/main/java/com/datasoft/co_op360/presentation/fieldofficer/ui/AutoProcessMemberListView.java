@@ -1,6 +1,6 @@
 package com.datasoft.co_op360.presentation.fieldofficer.ui;
 
-import com.datasoft.co_op360.domain.model.MemberListData;
+import com.datasoft.co_op360.domain.model.Member;
 
 import java.util.List;
 
@@ -10,11 +10,11 @@ import java.util.List;
 
 public interface AutoProcessMemberListView {
 
-    void setProcesses(List<MemberListData> list);
+    void setProcesses(List<Member> list);
 
     void showProgress();
 
     void hideProgress();
 
-    void onItemclick(MemberListData memberListData);
+    void onItemclick(Member member);
 }

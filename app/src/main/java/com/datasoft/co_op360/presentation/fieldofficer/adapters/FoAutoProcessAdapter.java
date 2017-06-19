@@ -74,15 +74,15 @@ public class FoAutoProcessAdapter extends RecyclerView.Adapter<FoAutoProcessAdap
             tv_loan = (TextView) itemView.findViewById(R.id.tv_loan);
         }
 
-        public void bind(final Samity foautoProcessSamity, int number, final FoAutoProcessPresenter processPresenter) {
+        public void bind(final Samity samity, int number, final FoAutoProcessPresenter processPresenter) {
 
             tv_number.setText("" + number);
-            tv_group_pname.setText(foautoProcessSamity.getName());
+            tv_group_pname.setText(samity.getName());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    processPresenter.itemClick(foautoProcessSamity);
+                    processPresenter.itemClick(samity);
                 }
             });
 

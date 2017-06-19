@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
+import com.datasoft.co_op360.presentation.fieldofficer.ui.activities.FoMainActivity;
 import com.datasoft.co_op360.presentation.login.LoginActivity;
 import com.datasoft.co_op360.storage.sharedprefereces.SecureSharedPreferences;
 
@@ -27,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                /*if (msecureSharedPreferences.getBoolean("is_loggedIn", false)) {
+                if (msecureSharedPreferences.getBoolean("is_loggedIn", false)) {
 
                     mIntent = new Intent(SplashActivity.this, FoMainActivity.class);
                     startActivity(mIntent);
@@ -37,11 +38,11 @@ public class SplashActivity extends AppCompatActivity {
                     mIntent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(mIntent);
                     finish();
-                }*/
+                }
 
-                mIntent = new Intent(SplashActivity.this, LoginActivity.class);
+                /*mIntent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(mIntent);
-                finish();
+                finish();*/
 
             }
 

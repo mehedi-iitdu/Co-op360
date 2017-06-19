@@ -38,6 +38,17 @@ public class MemberRepositoryImpl implements MemberRepository {
     }
 
     @Override
+    public List<Member> getMembersBySamityId(int id) {
+        List<DBMember> dbMembers = SQLite
+                .select()
+                .from(DBMember.class)
+                .where(DBMember_Table.samityId.eq(id))
+                .queryList();
+
+        return MemberModelConverter.convertStorageListToDomainModel(dbMembers);
+    }
+
+    @Override
     public List<Member> getAllMembers() {
         List<DBMember> dbMembers = SQLite
                 .select()

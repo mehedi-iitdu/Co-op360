@@ -16,6 +16,8 @@ public interface MemberRepository {
 
     Member getMemberById(int id);
 
+    List<Member> getMembersBySamityId(int id);
+
     List<Member> getAllMembers();
 
     List<Member> getAllUnsyncedMembers();

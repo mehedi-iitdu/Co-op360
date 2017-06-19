@@ -69,6 +69,8 @@ public class AutoProcessGroupList extends AppCompatActivity implements AutoProce
     @Override
     public void onItemclick(Samity samity) {
 
-        startActivity(new Intent(this, AutoProcessMemberList.class));
+        Intent intent = new Intent(this, AutoProcessMemberList.class);
+        intent.putExtra("SamityId", samity.getId());
+        startActivity(intent);
     }
 }
