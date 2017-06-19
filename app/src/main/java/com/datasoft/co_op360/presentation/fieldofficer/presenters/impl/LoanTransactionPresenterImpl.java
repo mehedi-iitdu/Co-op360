@@ -1,9 +1,9 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.domain.model.LoanTransactionData;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.LoanTransactionInterator;
+import com.datasoft.co_op360.domain.interactors.LoanTransactionInterator;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.LoanTransactionView;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.LoanTransactionInteratorImpl;
+import com.datasoft.co_op360.domain.interactors.impl.LoanTransactionInteratorImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.LoanTransactionPresenter;
 
 import java.util.List;

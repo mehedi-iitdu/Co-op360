@@ -1,8 +1,8 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoSavingsPresenter;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoSavingsInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoSavingsInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.FoSavingsInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoSavingsInteractorImpl;
 import com.datasoft.co_op360.domain.model.SavingsListItemData;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoSavingsListView;
 

@@ -1,8 +1,8 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.ProcessInteractor;
+import com.datasoft.co_op360.domain.interactors.ProcessInteractor;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoProcessView;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.ProcessInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.impl.ProcessInteractorImpl;
 import com.datasoft.co_op360.domain.model.ProcessData;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.ProcessPresenter;
 

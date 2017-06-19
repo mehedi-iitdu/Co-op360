@@ -2,8 +2,8 @@ package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import android.util.Log;
 
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoDeatailsSavingsInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoDeatailsSavingsInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.FoDeatailsSavingsInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoDeatailsSavingsInteractorImpl;
 import com.datasoft.co_op360.domain.model.IndividualSavingsData;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoDetailsSavingsPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoDetailsSavingsView;

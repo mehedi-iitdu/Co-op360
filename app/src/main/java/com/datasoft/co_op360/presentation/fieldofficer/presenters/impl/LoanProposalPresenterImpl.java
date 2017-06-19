@@ -1,7 +1,7 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.LoanProposalInteractorImpl;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.LoanProposalInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.LoanProposalInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.LoanProposalInteractor;
 import com.datasoft.co_op360.domain.model.LoanProposalData;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.LoanProposalPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.LoanProposalView;

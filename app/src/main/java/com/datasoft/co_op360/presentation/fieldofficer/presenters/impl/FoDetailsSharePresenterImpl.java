@@ -1,7 +1,7 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoDetailsShareInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoDetailsShareInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.FoDetailsShareInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoDetailsShareInteractorImpl;
 import com.datasoft.co_op360.domain.model.IndividualShareData;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoDetailsSharePresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoDetailsShareView;

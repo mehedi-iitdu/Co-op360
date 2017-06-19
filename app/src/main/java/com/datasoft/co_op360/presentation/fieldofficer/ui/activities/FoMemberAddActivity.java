@@ -9,7 +9,7 @@ import android.widget.AutoCompleteTextView;
 import com.datasoft.co_op360.domain.model.GroupData;
 import com.datasoft.co_op360.R;
 import com.datasoft.co_op360.presentation.fieldofficer.adapters.AutoCompleteGroupsAdapter;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoGroupInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.impl.FoGroupInteractorImpl;
 
 import java.util.List;
 

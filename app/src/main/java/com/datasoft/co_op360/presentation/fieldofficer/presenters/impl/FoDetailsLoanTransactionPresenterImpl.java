@@ -1,8 +1,8 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.domain.model.IndividualLoanTransactionData;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoDetailsLoanTransactionInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoDetailsLoanTransactionInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.FoDetailsLoanTransactionInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoDetailsLoanTransactionInteractorImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoDetailsLoanTransactionPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoDetailsLoanTransactionView;
 

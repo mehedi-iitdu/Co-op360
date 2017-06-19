@@ -1,8 +1,8 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.domain.model.GroupData;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoGroupInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoGroupInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.FoGroupInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoGroupInteractorImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoGroupPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoGroupView;
 

@@ -1,8 +1,8 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.domain.model.ReportData;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.ReportInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.ReportInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.ReportInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.ReportInteractorImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.ReportPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.ReportView;
 

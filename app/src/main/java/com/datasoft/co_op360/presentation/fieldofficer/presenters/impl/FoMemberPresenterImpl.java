@@ -3,8 +3,8 @@ package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 import com.datasoft.co_op360.domain.model.Member;
 import com.datasoft.co_op360.domain.model.MemberListData;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoMemberView;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoMemberInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoMemberInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.FoMemberInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoMemberInteractorImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoMemberPresenter;
 
 import java.util.List;

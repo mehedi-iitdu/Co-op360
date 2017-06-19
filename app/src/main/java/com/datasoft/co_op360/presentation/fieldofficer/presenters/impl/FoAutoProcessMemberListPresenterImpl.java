@@ -1,10 +1,10 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.domain.model.MemberListData;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoAutoProcessMemberListInteractor;
+import com.datasoft.co_op360.domain.interactors.FoAutoProcessMemberListInteractor;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoAutoProcessMemberListPresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.AutoProcessMemberListView;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoAutoProcessMemberListInteractorImpl;
+import com.datasoft.co_op360.domain.interactors.impl.FoAutoProcessMemberListInteractorImpl;
 
 import java.util.List;
 

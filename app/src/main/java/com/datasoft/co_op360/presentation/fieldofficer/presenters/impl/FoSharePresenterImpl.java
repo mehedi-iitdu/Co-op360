@@ -1,8 +1,8 @@
 package com.datasoft.co_op360.presentation.fieldofficer.presenters.impl;
 
 import com.datasoft.co_op360.domain.model.ShareListItemData;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.FoShareInteractor;
-import com.datasoft.co_op360.presentation.fieldofficer.interactors.impl.FoShareIntersctorImpl;
+import com.datasoft.co_op360.domain.interactors.FoShareInteractor;
+import com.datasoft.co_op360.domain.interactors.impl.FoShareIntersctorImpl;
 import com.datasoft.co_op360.presentation.fieldofficer.presenters.FoSharePresenter;
 import com.datasoft.co_op360.presentation.fieldofficer.ui.FoShareListView;
 
