@@ -10,25 +10,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574f0620-ab88-443d-8cbb-2b8080323075" name="Default" comment="member list bug fixed">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/FoAutoProcessInteractor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/FoAutoProcessMemberListInteractor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/impl/FoAutoProcessInteractorImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/impl/FoAutoProcessMemberListInteractorImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+    <list default="true" id="574f0620-ab88-443d-8cbb-2b8080323075" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/GetAllSamitiesInteractor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/GetAllSamitiesInteractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/adapters/FoGroupAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/adapters/FoGroupAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/presenters/FoGroupPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/presenters/FoGroupPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/presenters/impl/FoGroupPresenterImpl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/presenters/impl/FoGroupPresenterImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/FoGroupView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/FoGroupView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoGroupActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoGroupActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoLoanActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoLoanActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoSavingsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoSavingsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoShareActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoShareActivity.java" />
     </list>
     <ignored path="Co-op360.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1951,7 +1934,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/adapters/FoMemberAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoDetailsLoanTransactionAcivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/adapters/FoDetailsLoanTransactionAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoLoanTabActivity.java" />
@@ -2002,6 +1984,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoSavingsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoLoanActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoShareActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/impl/FoMemberInteractorImpl.java" />
       </list>
     </option>
   </component>
@@ -2045,6 +2028,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Co-op360" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Co-op360" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2406,7 +2399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497855495344</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bug fixed">
+      <created>1497863798761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1497863798761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2459,7 +2459,8 @@
     <MESSAGE value="real data added" />
     <MESSAGE value="member list fixed" />
     <MESSAGE value="member list bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="member list bug fixed" />
+    <MESSAGE value="bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -2467,22 +2468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="16" selection-end-line="44" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/AutoProcessMemberList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoDetailsLoanTransactionAcivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2538,8 +2523,8 @@
         <state relative-caret-position="420">
           <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
           <folding>
-            <element signature="e#2205#2473#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
+            <element signature="e#2206#2474#0" expanded="true" />
+            <element signature="e#2473#2474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2628,14 +2613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/impl/FoMemberInteractorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2881,6 +2858,33 @@
         <state relative-caret-position="90">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/domain/interactors/impl/FoMemberInteractorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/presenters/impl/FoMemberPresenterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/datasoft/co_op360/presentation/fieldofficer/ui/activities/FoMemberAcivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+          <folding>
+            <element signature="e#2109#2323#0" expanded="true" />
+            <element signature="e#2322#2323#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
