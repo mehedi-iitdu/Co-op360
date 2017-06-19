@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
@@ -38,6 +39,7 @@ public class FoProcessFragment extends Fragment implements FoProcessView {
     GridLayoutManager gridLayoutManager;
     ProcessCardAdapter adapter;
     ProcessPresenter processPresenter;
+    private Context mContext;
 
     public static float dipToPixels(Context context, float dipValue) {
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();
@@ -47,14 +49,21 @@ public class FoProcessFragment extends Fragment implements FoProcessView {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dipValue, metrics);
     }
 
+    public static int calculateNoOfColumns(Context context) {
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        float dpWidth = displayMetrics.widthPixels / displayMetrics.density;
+        int noOfColumns = (int) (dpWidth / 180);
+        return noOfColumns;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         Log.e("onCreateView", "Process");
 
+        mContext = getContext();
         View view = inflater.inflate(R.layout.fo_process_fragment, null);
         recyclerView = (RecyclerView) view.findViewById(R.id.cv_process_list);
-
         processPresenter = new ProcessPresenterImpl(this);
         processPresenter.getProcessData();
 
@@ -65,10 +74,13 @@ public class FoProcessFragment extends Fragment implements FoProcessView {
     public void setProcesses(List<ProcessData> list) {
 
         Log.e("Set Process", list.toString());
-        adapter = new ProcessCardAdapter(getContext(), list, processPresenter);
+        adapter = new ProcessCardAdapter(mContext, list, processPresenter);
 
-        gridLayoutManager = new GridAutoFitLayoutManager(getContext(), (int) dipToPixels(getContext(), (float) 175));
-        //recyclerView.addItemDecoration(new MarginDecoration(getContext()));
+        //gridLayoutManager = new GridAutoFitLayoutManager(mContext, (int) dipToPixels(mContext, (float) 175));
+        //recyclerView.addItemDecoration(new MarginDecoration(mContext));
+
+        gridLayoutManager = new GridLayoutManager(mContext, calculateNoOfColumns(mContext));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(adapter);
     }
@@ -77,7 +89,7 @@ public class FoProcessFragment extends Fragment implements FoProcessView {
     @Override
     public void onItemclick(ProcessData processData) {
 
-        /*Toast.makeText(getContext(), processData.getProcess_name(), Toast.LENGTH_SHORT).show();*/
+        /*Toast.makeText(mContext, processData.getProcess_name(), Toast.LENGTH_SHORT).show();*/
 
         switch (processData.getProcess_name()) {
 
