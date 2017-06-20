@@ -84,7 +84,7 @@ public class FoGroupActivity extends AppCompatActivity implements FoGroupView {
     @Override
     public void onItemclick(Samity samity) {
 
-        startActivity(new Intent(this, AutoProcessMemberList.class));
+        /*startActivity(new Intent(this, AutoProcessMemberList.class));*/
 
     }
 }
