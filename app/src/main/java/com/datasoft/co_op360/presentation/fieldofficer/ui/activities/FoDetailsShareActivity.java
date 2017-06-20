@@ -53,6 +53,7 @@ public class FoDetailsShareActivity extends AppCompatActivity implements FoDetai
 
     @Override
     public void hideProgress() {
+
         progressDialog.dismiss();
     }
 
