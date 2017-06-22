@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                if (msecureSharedPreferences.getBoolean("is_loggedIn", false)) {
+                /*if (msecureSharedPreferences.getBoolean("is_loggedIn", false)) {
 
                     mIntent = new Intent(SplashActivity.this, FoMainActivity.class);
                     startActivity(mIntent);
@@ -38,11 +38,11 @@ public class SplashActivity extends AppCompatActivity {
                     mIntent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(mIntent);
                     finish();
-                }
+                }*/
 
-                /*mIntent = new Intent(SplashActivity.this, LoginActivity.class);
+                mIntent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(mIntent);
-                finish();*/
+                finish();
 
             }
 
